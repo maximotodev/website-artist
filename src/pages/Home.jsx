@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div className="home">
         <div className="overlay"></div>
-        <video className='main-video' src={videoBg} autoPlay loop muted/>
+        <video className='main-video' src={videoBg} autoPlay loop muted playsInline/>
         <div className="content">
           <Link className='artist-logo' to='about'>Alyssa Grey</Link>
           <div className="social-media">
