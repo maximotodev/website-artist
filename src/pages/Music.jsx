@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Music = () => {
 
@@ -40,10 +41,12 @@ const Music = () => {
         .catch(err => console.log(err))
     }, [accessToken])
   console.log(albums)
-  const albumElement = albums.map(album => (<div style={{border: '1px solid magenta'}} key={album.id}>
-    <img src={album.images[2].url} alt={album.name}/>
+  const albumElement = albums.map(album => (<Link
+      to={album.external_urls.spotify}
+      key={album.id}>
     <h3>{album.name}</h3>
-  </div>))
+    <img src={album.images[1].url} alt={album.name}/>
+  </Link>))
 
   return (
     <div>
