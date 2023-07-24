@@ -16,8 +16,3 @@
     padding: .5em 1em;
     color: rgba(255, 255, 255, 0.486);
 }
-
-.navbar a:hover {
-    border-bottom: 1px solid #ffffff;
-    color: white;
-}

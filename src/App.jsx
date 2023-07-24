@@ -1,10 +1,10 @@
 import './App.css'
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Layout from './components/Layout'
 import Home from './pages/Home'
 import About from './pages/About'
 import Music from './pages/Music'
-import Merch from './pages/Merch'
+import Store from './pages/Store'
 
 function App() {
 
@@ -15,7 +15,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="music" element={<Music />} />
-          <Route path="merch" element={<Merch />} />
+          <Route path="store" element={<Store />} />
         </Route>
       </Routes>
     </BrowserRouter>

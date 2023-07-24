@@ -1,6 +1,5 @@
-import React from "react"
 
-const Merch = () => {
+const Store = () => {
   return (
     <div>
       <h1>this is merch page</h1>
@@ -8,4 +7,4 @@ const Merch = () => {
   )
 };
 
-export default Merch;
+export default Store;
