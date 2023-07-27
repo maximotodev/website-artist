@@ -1,5 +1,9 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import Carousel from "react-spring-3d-carousel";
+import { nanoid } from 'nanoid'
+import './Music.css'
+
 
 const Music = () => {
 
@@ -9,6 +13,7 @@ const Music = () => {
   const [albums, setAlbums] = useState([])
   const [accessToken, setAccessToken] = useState('')
 
+  console.log(albums)
 // API Access Token
   useEffect(() => {
     var authParameters = {
@@ -40,18 +45,26 @@ const Music = () => {
         .then(data => setAlbums(data.items))
         .catch(err => console.log(err))
     }, [accessToken])
+
   console.log(albums)
-  const albumElement = albums.map(album => (<Link
-      to={album.external_urls.spotify}
-      key={album.id}>
-    <h3>{album.name}</h3>
-    <img src={album.images[1].url} alt={album.name}/>
-  </Link>))
+
+  const slides = albums.map(album => ({
+    key: nanoid(),
+    content: <Link to={album.external_urls.spotify}><img width='180px' src={album.images[1].url} /><p>{album.name}</p></Link>
+  }))
 
   return (
-    <div>
-      {albumElement}
-    </div>
+      <div className="music">
+        <h3>check out my music</h3>
+        <div className="carousel">
+        <Carousel
+        slides={slides}
+        goToSlideDelay={300}
+        showNavigation={true}/>
+        </div>
+      </div>
+      
+
   )
 };
 
