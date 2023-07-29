@@ -8,7 +8,7 @@ import { faVolumeHigh, faVolumeOff } from '@fortawesome/free-solid-svg-icons'
 import { useOutletContext } from "react-router-dom"
 
 const Home = () => {
-  const [isMute, setIsMute] = useOutletContext();
+  const { isMute: [isMute, setIsMute] } = useOutletContext();
 
   const toggleMute = () => {
     setIsMute(prev => !prev)
