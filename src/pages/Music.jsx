@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import Carousel from "react-spring-3d-carousel";
-import { nanoid } from 'nanoid'
 import './Music.css'
+import Carousel from 'react-bootstrap/Carousel';
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import ExampleCarouselImage from 'components/ExampleCarouselImage';
+
 
 
 const Music = () => {
@@ -48,24 +49,31 @@ const Music = () => {
 
   console.log(albums)
 
-  const slides = albums.map(album => ({
-    key: nanoid(),
-    content: <Link to={album.external_urls.spotify}><img width='180px' src={album.images[1].url} /><p>{album.name}</p></Link>
-  }))
+  // const slides = albums.map(album => ({
+  //   key: nanoid(),
+  //   content: <Link to={album.external_urls.spotify}><img width='180px' src={album.images[1].url} /><p>{album.name}</p></Link>
+  // }))
+
+  const slideElements = albums.map(album => (
+  <Carousel.Item key={album.id}>
+    <img style={{borderRadius: '10px'}} src={album.images[1].url} alt={album.name}/>
+    <Carousel.Caption>
+      <p>{album.name}</p>
+    </Carousel.Caption>
+  </Carousel.Item>))
 
   return (
-      <div className="music">
-        <h3>check out my music</h3>
-        <div className="carousel">
+        <Carousel>
+        {slideElements}
+      </Carousel>
+  )
+};
+
+{/* <div className="carousel">
         <Carousel
         slides={slides}
         goToSlideDelay={300}
         showNavigation={true}/>
-        </div>
-      </div>
-      
-
-  )
-};
+        </div> */}
 
 export default Music;
