@@ -17,7 +17,7 @@ const Music = () => {
     <Carousel.Caption>
       <button>{album.name}</button>
     </Carousel.Caption>
-    <img style={{borderRadius: '10px', width: '100%'}} src={album.images[1].url} alt={album.name}/>
+    <img style={{borderRadius: '10px'}} src={album.images[1].url} alt={album.name}/>
     </Link>
   </Carousel.Item>))
 
