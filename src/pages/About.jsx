@@ -1,7 +1,7 @@
 const About = () => {
   return (
-    <div>
-      
+    <div className="about-me-page">
+      {/* <img src="" alt="" srcset="" /> */}
       <h1>this is the about page</h1>
     </div>
   )
