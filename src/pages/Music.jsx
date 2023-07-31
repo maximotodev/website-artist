@@ -14,9 +14,6 @@ const Music = () => {
   const slideElements = albums.map(album => (
   <Carousel.Item key={album.id}>
     <Link to={album.external_urls.spotify}>
-    <Carousel.Caption>
-      <button>{album.name}</button>
-    </Carousel.Caption>
     <img style={{borderRadius: '10px'}} src={album.images[1].url} alt={album.name}/>
     </Link>
   </Carousel.Item>))
