@@ -8,12 +8,13 @@ const Layout = () => {
 
   const [isMute, setIsMute] = useState(true);
   const [albums, setAlbums] = useState([])
+  const [artistPhotos, setArtistPhotos] = useState([])
   const [accessToken, setAccessToken] = useState('')
+
 
   const CLIENT_ID = 'fd5a6414fb164dac82a7fa7c46ff1713'
   const CLIENT_SECRET = '0880408c446a4f4e8a88ad64a7c09124'
 
-  console.log(albums)
 // API Access Token
   useEffect(() => {
     var authParameters = {
@@ -30,6 +31,22 @@ const Layout = () => {
       })
       .catch(err => console.log(err))
   },[])
+
+// Get artists photos
+
+useEffect( ()=> {
+  accessToken &&
+  fetch('https://api.spotify.com/v1/artists/3pepeKuCVRstCagyJZrGfq', {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + accessToken
+      }
+    })
+      .then(res => res.json())
+      .then(data => setArtistPhotos(data.images))
+      .catch(err => console.log(err))
+  }, [accessToken])
 
 // Get artists albums
   useEffect( ()=> {
@@ -53,7 +70,8 @@ const Layout = () => {
         {
         isMute: [isMute, setIsMute],
         accessToken: [accessToken, setAccessToken],
-        albums: [albums, setAlbums]
+        albums: [albums, setAlbums],
+        artistPhotos: [artistPhotos, setArtistPhotos]
         }}
       />
       <Footer />
