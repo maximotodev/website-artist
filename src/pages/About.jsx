@@ -2,7 +2,9 @@ import { useOutletContext } from "react-router-dom";
 import './About.css'
 
 const About = () => {
+  
   const { artistPhotos: [artistPhotos, setArtistPhotos]} = useOutletContext()
+
   return (
     <div className="about-me-page">
       <img className="artist-about-img" src={artistPhotos[1].url} alt='Artist Alyssa Grey' />
