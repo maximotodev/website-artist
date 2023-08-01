@@ -9,8 +9,8 @@ const Contact = () => {
 
   return (
     <div style={{color: 'white'}}>
-      <h2>Contact Information</h2>
-      <p><strong>Name:</strong> {contactData.name}</p>
+      <h2>Contact me</h2>
+      <p><strong></strong> {contactData.name}</p>
       <p><strong>Email:</strong> {contactData.email}</p>
       <Link style={{textDecoration: 'none'}} to={contactData.linktree}><p><strong>Linktree</strong></p></Link>
     </div>
