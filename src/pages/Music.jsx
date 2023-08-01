@@ -9,14 +9,20 @@ const Music = () => {
 
   const { albums: [albums, setAlbums] } = useOutletContext();
 
-  // console.log(albums)
+  console.log(albums)
 
   const slideElements = albums.map(album => (
   <Carousel.Item key={album.id}>
-    <Link to={album.external_urls.spotify}>
-    <img style={{borderRadius: '10px'}} src={album.images[1].url} alt={album.name}/>
-    </Link>
-  </Carousel.Item>))
+   <Link style={{textDecoration: 'none'}} to={album.external_urls.spotify}>
+    <p className="album-name">{album.name}</p>
+   <img style={{borderRadius: '10px'}} src={album.images[1].url} alt={album.name}/>
+   </Link>
+   </Carousel.Item> 
+   ))
+    
+   
+  
+
 
   return (
     <div className="music-page">
