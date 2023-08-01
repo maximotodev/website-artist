@@ -12,7 +12,7 @@ function SubscriptionBtn() {
   return (
     <>
       <Button variant="light" onClick={handleShow}>
-        Subscribe to my site
+        Subscribe
       </Button>
       <Modal show={show} onHide={handleClose} centered>
         <Modal.Header closeButton>
