@@ -9,7 +9,7 @@ const Music = () => {
 
   const { albums: [albums, setAlbums] } = useOutletContext();
 
-  console.log(albums)
+  // console.log(albums)
 
   const slideElements = albums.map(album => (
   <Carousel.Item key={album.id}>

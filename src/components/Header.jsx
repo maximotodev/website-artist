@@ -1,5 +1,7 @@
 import { NavLink } from "react-router-dom"
 import './Header.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHome, faStar, faMusic, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => {
 
@@ -11,23 +13,22 @@ const Header = () => {
 
   return (
     <header className="header">
-      {/* <Link className="site-logo" to="/">#AlyssaGrey</Link> */}
       <nav className="navbar">
         <NavLink
           to="/"
-          style={({isActive}) => isActive ? activeStyle : null}>home
+          style={({isActive}) => isActive ? activeStyle : null}><FontAwesomeIcon icon={faHome}/>
           </NavLink>
         <NavLink
           to="about"
-          style={({isActive}) => isActive ? activeStyle : null}>about
+          style={({isActive}) => isActive ? activeStyle : null}><FontAwesomeIcon icon={faStar}/>
           </NavLink>
         <NavLink
           to="music"
-          style={({isActive}) => isActive ? activeStyle : null}>music
+          style={({isActive}) => isActive ? activeStyle : null}><FontAwesomeIcon icon={faMusic}/>
           </NavLink>
         <NavLink
           to="store"
-          style={({isActive}) => isActive ? activeStyle : null}>store
+          style={({isActive}) => isActive ? activeStyle : null}><FontAwesomeIcon icon={faEnvelope}/>
           </NavLink>
       </nav>
     </header>

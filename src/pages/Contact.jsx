@@ -1,5 +1,5 @@
 
-const Store = () => {
+const Contact = () => {
   return (
     <div>
       <h1>this is merch page</h1>
@@ -7,4 +7,4 @@ const Store = () => {
   )
 };
 
-export default Store;
+export default Contact;
