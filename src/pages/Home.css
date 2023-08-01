@@ -61,3 +61,10 @@
 .social-media a {
     color: rgba(255, 255, 255, 0.507);
 }
+
+.artist-logo:hover,
+.artist-logo:focus,
+.social-media a:hover,
+.social-media a:focus {
+    color: white;
+}

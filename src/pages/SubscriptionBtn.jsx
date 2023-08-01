@@ -11,7 +11,7 @@ function SubscriptionBtn() {
 
   return (
     <>
-      <Button variant="dark" onClick={handleShow}>
+      <Button variant="light" onClick={handleShow}>
         Subscribe to my site
       </Button>
       <Modal show={show} onHide={handleClose} centered>
@@ -33,7 +33,6 @@ function SubscriptionBtn() {
               <Form.Control
                 type="text"
                 placeholder=""
-                autoFocus
               />
             </Form.Group>
           </Form>

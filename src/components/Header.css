@@ -6,7 +6,6 @@
 }
 
 .navbar {
-    padding: 1em;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -16,4 +15,9 @@
     padding: .5em 1em;
     color: rgba(255, 255, 255, 0.486);
     text-decoration: none;
+}
+
+.navbar a:hover,
+.navbar a:focus {
+    color: white;
 }
