@@ -8,7 +8,7 @@ const Header = () => {
   const activeStyle = {
     fontWeight: "bold",
     color: "white",
-    borderBottom: '1px solid #ffffff'
+    borderBottom: '3px solid #ffffff'
   }
 
   return (

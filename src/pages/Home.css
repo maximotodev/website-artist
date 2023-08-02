@@ -46,7 +46,7 @@
 .social-media {
     font-size: 1.69rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .social-media a {
