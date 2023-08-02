@@ -4,6 +4,7 @@ import videoBg from '../assets/alyssa-grey-video2.mp4'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faTiktok, faSpotify, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { faVolumeHigh, faVolumeOff } from '@fortawesome/free-solid-svg-icons'
+import { AttentionSeeker } from "react-awesome-reveal";
 
 import { useOutletContext } from "react-router-dom"
 
@@ -17,9 +18,13 @@ const Home = () => {
     <div className="home">
         <div className="overlay"></div>
         <video className='main-video' src={videoBg} autoPlay loop muted={isMute} playsInline/>
-        <div className="content">
-          <Link className='artist-logo' to='about'>Alyssa Grey</Link>
+
+        <AttentionSeeker effect="wobble" className="content">
+
+          <h1 className='artist-logo' to='about'>Alyssa Grey</h1>
+
           <div className="social-media">
+
             <a target='_blank' rel='noreferrer' href="https://www.instagram.com/_alyssagrey/">
               <FontAwesomeIcon icon={faInstagram}/>
             </a>
@@ -36,9 +41,10 @@ const Home = () => {
             <FontAwesomeIcon icon={ isMute ? faVolumeOff : faVolumeHigh } />
             </a>
           </div>
-        </div>
+        </AttentionSeeker>
     </div>
   )
 };
 
 export default Home;
+
