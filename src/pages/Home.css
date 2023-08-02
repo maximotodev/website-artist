@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 
 .home {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100vh;
     position: absolute;
@@ -12,19 +14,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.content {
-    position: absolute;
-    top: 0%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
+    margin-bottom: -25em;
 }
 
 .overlay {
@@ -40,21 +30,28 @@
     font-size: 3rem;
     text-decoration: none;
     text-transform: uppercase;
-    line-height: 3;
-    color: rgba(255, 255, 255, 0.507);
+    line-height: 1.1;
+    color: white;
+    /* color: white; */
+    /* color: rgba(255, 255, 255, 0.507); */
     /* border: 1px solid salmon; */
     text-align: center;
     font-family: 'Monoton', cursive;
+    cursor: pointer;
 }
 
+.highlight-logo {
+    display: inline;
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.507);
+}
 
 .social-media {
-    width: 80%;
     /* border: 1px solid red; */
     /* margin-top: 1em; */
+    font-size: 1.5rem;
     display: flex;
     justify-content: space-around;
-    /* border: 1px solid red; */
 }
 
 .social-media a {
@@ -64,6 +61,23 @@
 .artist-logo:hover,
 .artist-logo:focus,
 .social-media a:hover,
-.social-media a:focus {
+.social-media a:focus,
+.highlight-logo:hover,
+.highlight-logo:focus {
     color: white;
+}
+
+.content {
+    /* background-color: beige; */
+    /* position: absolute; */
+    /* top: 0%; */
+    /* left: 0; */
+    /* width: 100%; */
+    /* height: 200px; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* color: white; */
+    /* border: 1px solid red; */
 }

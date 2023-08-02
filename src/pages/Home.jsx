@@ -17,14 +17,10 @@ const Home = () => {
   return (
     <div className="home">
         <div className="overlay"></div>
-        <video className='main-video' src={videoBg} autoPlay loop muted={isMute} playsInline/>
-
+        <video className='main-video' src={videoBg} autoPlay loop muted={isMute} playsInline />
         <AttentionSeeker effect="wobble" className="content">
-
-          <h1 className='artist-logo' to='about'>Alyssa Grey</h1>
-
+          <h1 className='artist-logo' to='about'>A<span className="highlight-logo">lyssa</span> G<span className="highlight-logo">rey</span></h1>
           <div className="social-media">
-
             <a target='_blank' rel='noreferrer' href="https://www.instagram.com/_alyssagrey/">
               <FontAwesomeIcon icon={faInstagram}/>
             </a>
