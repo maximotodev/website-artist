@@ -1,28 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
 
 .about-me-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.about-me-name {
-    color: whitesmoke;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    font-family: 'Monoton', cursive;
+    /* border: 1px solid red; */
+    padding: 1em;
 }
 
 .about-me-hero {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 1.5em;
-    margin-bottom: 1.5em;
+    /* border: 1px solid green; */
+}
+
+.about-me-greeting {
+    font-family: 'Borel', cursive;
+    letter-spacing: 2px;
+    background-color: lightgrey;
+    padding: 0.5em;
+    border: 3px solid white;
+    border-radius: 10px;
+    color: black;
 }
 
 .artist-about-img {
     border-radius: 5%;
+    /* width: 200px; */
+    margin: 0 auto;
 }

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import './Home.css'
 import videoBg from '../assets/alyssa-grey-video2.mp4'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -22,7 +22,8 @@ const Home = () => {
         <Zoom
           duration={1200}>
 
-          <h1 className='artist-logo' to='about'>A<span className="highlight-logo">lyssa</span><br></br> G<span className="highlight-logo">rey</span></h1>
+          <NavLink className='artist-logo' to='about'>A
+            <span className="highlight-logo">lyssa</span><br></br> G<span className="highlight-logo">rey</span></NavLink>
 
           <div className="social-media">
             <Link to='https://www.instagram.com/_alyssagrey/'>
@@ -34,12 +35,12 @@ const Home = () => {
             <a onClick={toggleMute} href="#">
             <FontAwesomeIcon icon={ isMute ? faVolumeOff : faVolumeHigh } />
             </a>
-            <a target='_blank' rel='noreferrer' href="https://open.spotify.com/artist/3pepeKuCVRstCagyJZrGfq">
+            <NavLink to='https://open.spotify.com/artist/3pepeKuCVRstCagyJZrGfq'>
               <FontAwesomeIcon icon={faSpotify}/>
-            </a>
-            <a target='_blank' rel='noreferrer' href="https://www.youtube.com/@alyssagrey6324">
+            </NavLink>
+            <NavLink to='https://www.youtube.com/@alyssagrey6324'>
               <FontAwesomeIcon icon={faYoutube}/>
-            </a>
+            </NavLink>
           </div>
         </Zoom>
     </div>

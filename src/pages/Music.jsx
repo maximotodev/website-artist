@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const Music = () => {
 
-  const { albums: [albums, setAlbums] } = useOutletContext();
+  const { albums: [albums] } = useOutletContext();
 
   // console.log(albums)
 

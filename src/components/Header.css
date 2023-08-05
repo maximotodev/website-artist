@@ -9,12 +9,10 @@
 .navbar {
     display: flex;
     flex-direction: row;
-    /* border: 1px solid red; */
 }
 
 .navbar a {
     display: block;
-    /* border: 1px solid green; */
     border-radius: 6em;
     padding: 1em;
     font-size: 1rem;

@@ -70,8 +70,8 @@ useEffect( ()=> {
         {
         isMute: [isMute, setIsMute],
         accessToken: [accessToken, setAccessToken],
-        albums: [albums, setAlbums],
-        artistPhotos: [artistPhotos, setArtistPhotos]
+        albums: [albums],
+        artistPhotos: [artistPhotos]
         }}
       />
       <Footer />
