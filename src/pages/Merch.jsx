@@ -6,7 +6,7 @@ const Merch = () => {
     <div className="merch wrapper">
       <h1 className='wrapper-title'>Store</h1>
       <Zoom cascade>
-        <p>Coming soon...</p>
+        <p style={{fontSize: '1rem'}}>Coming soon...</p>
       </Zoom>
     </div>
   );

@@ -29,7 +29,7 @@ const About = () => {
         <img className="artist-img" src={artistPhotos[1].url} alt='Artist Alyssa Grey' />
         {/* <SubscriptionBtn /> */}
         <p className="artist-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, impedit! Veritatis reiciendis nemo quam blanditiis molestias eius beatae cum enim?</p> 
-        <p>Lorem ipsum dolor sit amet: <span style={{backgroundColor: 'black', fontSize: '.6rem'}}>{randomElement}</span></p>
+        <p className="artist-description">Lorem ipsum dolor sit amet: <span style={{backgroundColor: 'black', fontSize: '.6rem', padding: '0.3em'}}>{randomElement}</span></p>
         <button onClick={generateRandomElement} style={{alignSelf: 'center', borderRadius: '50%'}}><FontAwesomeIcon icon={faRepeat}/></button>
       </div>
     </div>

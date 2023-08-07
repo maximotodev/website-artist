@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
+.music {
+    /* border: 1px solid magenta; */
+    display: flex;
+    padding: 1em;
+}
+
+.carousel-music {
+    width: 100%;
+    align-self: center;
+    /* border: 1px solid aqua; */
+}
+
 .album-name {
     color: white;
     text-align: center;

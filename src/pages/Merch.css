@@ -1,6 +1,5 @@
 .wrapper {
     width: 100%;
-    padding: 1em;
     background-color: #d3d3d361;
     margin: 0;
     /* border: 1px solid red; */
@@ -14,5 +13,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 3em 0;
 }
 

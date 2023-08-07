@@ -2,14 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
 
 .about-me {
-    /* border: 1px solid red; */
+    padding: 1em;
 }
 
 .hero {
-    /* padding: 1em; */
+    padding: 1em;
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 0.5em;
 }
 
 .artist-title {
@@ -26,6 +26,7 @@
 }
 
 .artist-description {
+    color: aliceblue;
     margin: 0;
     line-height: 1.6;
 }

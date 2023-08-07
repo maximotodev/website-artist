@@ -15,18 +15,15 @@ const Music = () => {
   <Carousel.Item key={album.id}>
    <Link style={{textDecoration: 'none'}} to={album.external_urls.spotify}>
     <h1 className="album-name">{album.name}</h1>
-   <img style={{borderRadius: '10px'}} src={album.images[1].url} alt={album.name}/>
+   <img width='100%'style={{borderRadius: '10px'}} src={album.images[1].url} alt={album.name}/>
    </Link>
    </Carousel.Item> 
    ))
     
-   
-  
-
 
   return (
     <div className="music wrapper">
-      <Carousel>
+      <Carousel className="carousel-music">
         {slideElements}
       </Carousel>
     </div>
