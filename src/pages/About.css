@@ -41,6 +41,11 @@
     /* line-height: 1.6; */
 }
 
+.attention-btn {
+    align-self: center;
+    cursor: pointer;
+}
+
 @media screen and (min-width: 500px) {
     .hero {
       /* background-color: olive; */

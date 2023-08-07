@@ -3,6 +3,7 @@ import './About.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRepeat } from '@fortawesome/free-solid-svg-icons'
 import { useState } from "react";
+import { AttentionSeeker } from "react-awesome-reveal";
 // import SubscriptionBtn from './SubscriptionBtn'
 
 const About = () => {
@@ -32,7 +33,9 @@ const About = () => {
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, impedit! Veritatis reiciendis nemo quam blanditiis molestias eius beatae cum enim?</p> 
           <p>Lorem ipsum dolor sit amet: <span style={{backgroundColor: 'black', fontSize: '.6rem', padding: '0.3em'}}>{randomElement}</span></p>
         </div>
-        <button onClick={generateRandomElement} style={{alignSelf: 'center', borderRadius: '50%', backgroundColor: 'white', }}><FontAwesomeIcon icon={faRepeat}/></button>
+        <AttentionSeeker className="attention-btn" effect="tada">
+          <button onClick={generateRandomElement} style={{alignSelf: 'center', borderRadius: '50%', backgroundColor: 'white', }}><FontAwesomeIcon icon={faRepeat}/></button>
+        </AttentionSeeker>
       </div>
     </div>
   )
