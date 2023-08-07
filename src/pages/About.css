@@ -6,17 +6,26 @@
 }
 
 .hero {
-    padding: 1em;
+    /* padding: 1em; */
     display: flex;
     flex-direction: column;
-    /* border: 1px solid red; */
+    gap: 1em;
 }
 
 .artist-title {
+    margin-top: 0.8em;
     font-family: 'Borel', cursive;
     color: whitesmoke;
+
 }
 
 .artist-img {
     border-radius: 8px;
+    width: 70%;
+    align-self: center;
+}
+
+.artist-description {
+    margin: 0;
+    line-height: 1.6;
 }

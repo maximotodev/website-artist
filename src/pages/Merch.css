@@ -6,6 +6,10 @@
     /* border: 1px solid red; */
 }
 
+.wrapper-title {
+    color: white;
+}
+
 .merch {
     display: flex;
     flex-direction: column;
