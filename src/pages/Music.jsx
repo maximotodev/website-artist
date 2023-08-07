@@ -14,7 +14,7 @@ const Music = () => {
   const slideElements = albums.map(album => (
   <Carousel.Item key={album.id}>
    <Link style={{textDecoration: 'none'}} to={album.external_urls.spotify}>
-    <p className="album-name">{album.name}</p>
+    <h1 className="album-name">{album.name}</h1>
    <img style={{borderRadius: '10px'}} src={album.images[1].url} alt={album.name}/>
    </Link>
    </Carousel.Item> 
@@ -25,7 +25,7 @@ const Music = () => {
 
 
   return (
-    <div className="music-page">
+    <div className="music wrapper">
       <Carousel>
         {slideElements}
       </Carousel>

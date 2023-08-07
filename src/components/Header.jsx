@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom"
 import './Header.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faStar, faMusic, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faStar, faMusic, faCartShopping } from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => {
 
@@ -28,7 +28,7 @@ const Header = () => {
           </NavLink>
         <NavLink
           to="store"
-          style={({isActive}) => isActive ? activeStyle : null}><FontAwesomeIcon icon={faEnvelope}/>
+          style={({isActive}) => isActive ? activeStyle : null}><FontAwesomeIcon icon={faCartShopping}/>
           </NavLink>
       </nav>
     </header>

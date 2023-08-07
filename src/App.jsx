@@ -4,7 +4,7 @@ import Layout from './components/Layout'
 import Home from './pages/Home'
 import About from './pages/About'
 import Music from './pages/Music'
-import Contact from './pages/Contact'
+import Merch from './pages/Merch'
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />}/>
           <Route path="music" element={<Music />} />
-          <Route path="store" element={<Contact />} />
+          <Route path="store" element={<Merch />} />
         </Route>
       </Routes>
     </BrowserRouter>
