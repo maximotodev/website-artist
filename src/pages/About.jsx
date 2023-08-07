@@ -32,7 +32,7 @@ const About = () => {
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, impedit! Veritatis reiciendis nemo quam blanditiis molestias eius beatae cum enim?</p> 
           <p>Lorem ipsum dolor sit amet: <span style={{backgroundColor: 'black', fontSize: '.6rem', padding: '0.3em'}}>{randomElement}</span></p>
         </div>
-        <button onClick={generateRandomElement} style={{alignSelf: 'center', borderRadius: '50%'}}><FontAwesomeIcon icon={faRepeat}/></button>
+        <button onClick={generateRandomElement} style={{alignSelf: 'center', borderRadius: '50%', backgroundColor: 'white', }}><FontAwesomeIcon icon={faRepeat}/></button>
       </div>
     </div>
   )
