@@ -3,7 +3,8 @@
 .music {
     /* border: 1px solid magenta; */
     display: flex;
-    padding: 1em;
+    /* padding: 1em; */
+    max-width: 450px;
 }
 
 .carousel-music {
@@ -13,9 +14,12 @@
 }
 
 .album-name {
+    margin: 0 auto;
+    background-color: black;
     color: white;
-    text-align: center;
+    text-align: end;
     font-family: 'Audiowide', cursive;
     font-size: large;
     letter-spacing: 3px;
+    line-height: 1.6;
 }

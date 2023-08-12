@@ -1,69 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
 
-.about-me {
-    /* padding: 1em; */
-    /* border: 1px solid red; */
-    display: flex;
-    flex-direction: column;
-}
-
 .hero {
-    max-width: 300px;
-    align-self: center;
-    padding: 1em;
     display: flex;
     flex-direction: column;
-    gap: 0.5em;
     /* border: 1px solid magenta; */
+    background-color: black;
+    /* padding: 1.4em; */
+    gap: 0.5em;
 }
 
 .artist-title {
-    margin-top: 0.8em;
-    font-family: 'Borel', cursive;
-    color: whitesmoke;
+    align-self: flex-start;
+    color: white;
     /* border: 1px solid green; */
 
 }
 
 .artist-img {
-    border: 1px solid white;
+    /* border: 1px solid orange; */
     border-radius: 8px;
-    width: 70%;
+    width: 60%;
     align-self: center;
+    margin-bottom: 1em;
 }
 
 .artist-description {
-    color: aliceblue;
+    align-self: center;
+    color: grey;
     display: flex;
     flex-direction: column;
-    /* margin: 0; */
-    /* line-height: 1.6; */
+    width: 70%;
+    align-items: center;
+}
+
+.artist-description > p {
+    padding: 1em;
+    background-color: #d3d3d393;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .attention-btn {
-    align-self: center;
     cursor: pointer;
+    align-self: center;
+}
+
+.random-quote {
+    background-color: #d3d3d393; 
+    font-size: .6rem;
+    /* padding: 0.05em; */
+    line-height: 1.6;
 }
 
 @media screen and (min-width: 500px) {
     .hero {
-      /* background-color: olive; */
       max-width: 350px;
-      align-self: center;
-      padding: 1em;
+      margin: 0 auto;
       display: flex;
       flex-direction: column;
-      gap: 0.5em;
     }
     .artist-description {
         color: aliceblue;
         display: flex;
         flex-direction: row;
-        gap: 5px;
-        /* text-align: left; */
-        /* margin: 0; */
-        /* line-height: 1.6; */
+        gap: 10px;
     }
     
   }
